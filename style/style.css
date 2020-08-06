@@ -232,20 +232,21 @@ body {
     font-size: 1.15vw;
 }
 
-.searchBox input[type=search] {
+.searchBox input[type='search'] {
     width: 23vw;
     height: 2.6vw;
     border: 2px solid #F5F5F5;
     border-radius: 1.3vw;
     padding: 0 2vw;
     font-size: 0.94vw;
+    -webkit-appearance: textfield;
 }
 
-.searchBox input[type=search]::placeholder {
+.searchBox input[type='search']::placeholder {
     font-size: 0.94vw;
 }
 
-.searchBox input[type=search]:focus {
+.searchBox input[type='search']:focus {
     outline: none;
 }
 
@@ -319,7 +320,7 @@ body {
     /*    border: 2px solid #193E58;*/
 }
 
-.box input[type=search] {
+.box input[type='search'] {
     width: 18.1vw;
     height: 3.13vw;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -332,9 +333,10 @@ body {
     background-repeat: no-repeat;
     background-size: 6%;
     font-size: 0.94vw;
+    -webkit-appearance: textfield;
 }
 
-.box input[type=search]:focus {
+.box input[type='search']:focus {
     outline: none;
     background-image: none;
 }
