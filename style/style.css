@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-.iconShow
-{
+
+.iconShow {
     visibility: hidden;
 }
+
 body {
     overflow-x: hidden;
     font-family: Roboto, sans-serif;
@@ -162,6 +163,10 @@ body {
 
 .subMenu li:first-of-type {
     padding: 0.68vw 3.3vw;
+}
+
+.subMenu li:first-of-type:hover {
+    background-color: rgba(25, 80, 68, 0.1);
 }
 
 .subMenu li a {
