@@ -552,9 +552,12 @@ body {
     font-weight: bold;
     letter-spacing: 1.2px;
     color: #FFFFFF;
-    padding: 0vw 1.9vw 0.1vw;
+    /*    padding: 0.15vw 1.9vw 0.1vw;*/
     margin: 0 auto;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .greyBtn {
@@ -567,9 +570,12 @@ body {
     font-weight: bold;
     letter-spacing: 1.2px;
     color: #FFFFFF;
-    padding: 0vw 0.8vw 0.1vw;
+    /*    padding: 0vw 0.8vw 0.1vw;*/
     margin: 0 auto;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .transpBtn {
