@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.iconShow
+{
+    visibility: hidden;
+}
 body {
     overflow-x: hidden;
     font-family: Roboto, sans-serif;
@@ -104,6 +107,7 @@ body {
 .menu .hasSub div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 1.3vw;
 }

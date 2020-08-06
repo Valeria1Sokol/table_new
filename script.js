@@ -93,7 +93,7 @@ $('.hasSub').click(function () {
     $(' .fas').toggleClass("rotate");
     $(this).toggleClass("clickLi");
     $('.subMenu').toggleClass("open");
-    $('.iconWhite').toggleClass("mobile");
+    $('.iconWhite').toggleClass("iconShow");
 });
 
 
