@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/popUp.css">
+<link rel="stylesheet" href="style/media.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<title>Document</title>
+
+<body>
+    <div class="contentBox">
+        <section class="dashboard">
+            <ul class="menu">
+                <li><a class="logo">
+                        <img alt="" src="img/logo.png">Ticketboom
+                    </a></li>
+                <li><a class="title">
+                        <p><img alt="" src="img/icon1.png"></p>Dashboard
+                    </a></li>
+                <li><a class="title">
+                        <p><img alt="" src="img/icon2.png"></p>Evenementen
+                    </a></li>
+                <li><a class="title">
+                        <p><img alt="" src="img/icon3.png"></p>Rapporten
+                    </a></li>
+                <li class="hasSub">
+                    <div>
+                        <a class="title">
+                            <p>
+                                <img alt="" src="img/icon4.png" class="icon4">
+                                <img alt="" src="img/icon4W.png" class="icon4 iconWhite">
+                            </p>Bestellingen
+                        </a>
+                        <span class="fas fa-caret-down"></span>
+                    </div>
+
+                    <ul class="subMenu">
+                        <li><a href="#">Bestellingen 1</a></li>
+                        <li><a href="#">Bestellingen 2</a></li>
+                        <li><a href="#">Bestellingen 3</a></li>
+                        <li><a href="#">Bestellingen 4</a></li>
+                    </ul>
+                </li>
+                <li><a class="title">
+                        <p><img alt="" src="img/icon5.png"></p>Scan centrum
+                    </a></li>
+                <li><a class="title">
+                        <p><img alt="" src="img/icon6.png"></p>Kortingscodes
+                    </a></li>
+                <li><a class="title">
+                        <p><img alt="" src="img/icon7.png"></p>Layouts
+                    </a></li>
+                <li><a class="title">
+                        <p><img alt="" src="img/icon8.png"></p>Instellingen
+                    </a></li>
+            </ul>
+        </section>
+        <section class="content">
+            <div class="boxWelcome">
+                <p class="tittle">Welcome to Ticketboom</p>
+                <div class="searchBox popup" onclick="searchFunction()">
+                    <input type="search" placeholder="Search">
+                    <a class="searchBtn push"></a>
+                    <div class="popuptext" id="myPopup3">
+                        <ul>
+                            <li>Zoekresultaat 1</li>
+                            <li>Zoekresultaat 2 hover</li>
+                            <li>Zoekresultaat 3</li>
+                            <li>Zoekresultaat 4</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="notification popup" onclick="notificationFunction()">
+                        <img alt="" src="img/bell-icon.png">
+                        <div class="text">8</div>
+                        <div class="popuptext" id="myPopup">
+                            <ul>
+                                <li>Dit is melding 1</li>
+                                <li>Dit is melding 1</li>
+                                <li>Dit is melding 1</li>
+                                <li>Dit is melding 1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="name">Jeffrey Davis</p>
+                    <div class="userBox popup" onclick="userFunction()">
+                        <img alt="" src="img/avatar-icon.png" class="user">
+                        <img alt="" src="img/arrow-icon.png" class="arrow">
+                        <div class="popuptext" id="myPopup2">
+                            <ul>
+                                <li>Dashboard</li>
+                                <li>Instellingen</li>
+                                <li>Meldingen</li>
+                                <li>Uitloggen</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box mobile">
+                <div class="searchBox popup mobile" onclick="searchMobFunction()">
+                    <input type="search" placeholder="Search">
+                    <a class="searchBtn push"></a>
+                    <div class="popuptext" id="myPopup4">
+                        <ul>
+                            <li>Zoekresultaat 1</li>
+                            <li>Zoekresultaat 2 hover</li>
+                            <li>Zoekresultaat 3</li>
+                            <li>Zoekresultaat 4</li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="newBtn push mobile"><span>+</span> Nieuw</a>
+            </div>
+
+            <div class="box">
+                <input type="search" placeholder="Zoeken">
+                <div class="btnBox btn-toggle">
+                    <a class="blueBtn btn btn-md btn-primary active" style="border-radius: 0.32vw 0 0 0.32vw;">Actueel</a>
+                    <a class="whiteBtn btn btn-md btn-default" style="border-radius: 0 0.32vw 0.32vw 0;">Gepasseerd</a>
+                </div>
+                <a class="newBtn push"><span>+</span> Nieuw</a>
+            </div>
+            <div class="slider">
+                <table class="active" id="i">
+                    <thead>
+                        <tr class="row-1">
+                            <td class="column-1"><a>Evenement<div><img alt="" src="img/arrow-white.png" class="top"><img alt="" src="img/arrow-bottom.png" class="bottom"></div></a>
+                            </td>
+                            <td class="column-2"><a>Start datum<div><img alt="" src="img/arrow-white.png" class="top"><img alt="" src="img/arrow-bottom.png" class="bottom"></div></a></td>
+                            <td class="column-3"><a>Eind datum<div><img alt="" src="img/arrow-white.png" class="top"><img alt="" src="img/arrow-bottom.png" class="bottom"></div></a></td>
+                            <td class="column-4">Tickets</td>
+                            <td class="column-5">Status</td>
+                            <td class="column-6"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row-2">
+                            <td class="column-1">Tomorrowland 2018</td>
+                            <td class="column-2">12-12-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn push">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-3">
+                            <td class="column-1">ADE 2019</td>
+                            <td class="column-2">30-12-2019 14:00</td>
+                            <td class="column-3">31-12-2019 01:00</td>
+                            <td class="column-4">1500 / 1500</td>
+                            <td class="column-5">
+                                <p class="greyBtn">Uitverkocht</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-4">
+                            <td class="column-1">Mini party 15.2</td>
+                            <td class="column-2">10-10-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-5">
+                            <td class="column-1">Tomorrowland 2018</td>
+                            <td class="column-2">12-12-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-6">
+                            <td class="column-1">ADE 2019</td>
+                            <td class="column-2">30-12-2019 14:00</td>
+                            <td class="column-3">30-12-2019 14:00</td>
+                            <td class="column-4">1500 / 1500</td>
+                            <td class="column-5">
+                                <p class="greyBtn">Uitverkocht</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-7">
+                            <td class="column-1">Mini party 15.2</td>
+                            <td class="column-2">10-10-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-8">
+                            <td class="column-1">Mini party 15.2</td>
+                            <td class="column-2">10-10-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-9">
+                            <td class="column-1">Tomorrowland 2018</td>
+                            <td class="column-2">12-12-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-10">
+                            <td class="column-1">ADE 2019</td>
+                            <td class="column-2">30-12-2019 14:00</td>
+                            <td class="column-3">30-12-2019 14:00</td>
+                            <td class="column-4">1500 / 1500</td>
+                            <td class="column-5">
+                                <p class="greyBtn">Uitverkocht</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-11">
+                            <td class="column-1">Mini party 15.2</td>
+                            <td class="column-2">10-10-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr class="row-1">
+                            <td class="column-1"><a>Evenement<div><img alt="" src="img/arrow-white.png" class="top"><img alt="" src="img/arrow-bottom.png" class="bottom"></div></a>
+                            </td>
+                            <td class="column-2"><a>Start datum<div><img alt="" src="img/arrow-white.png" class="top"><img alt="" src="img/arrow-bottom.png" class="bottom"></div></a></td>
+                            <td class="column-3"><a>Eind datum<div><img alt="" src="img/arrow-white.png" class="top"><img alt="" src="img/arrow-bottom.png" class="bottom"></div></a></td>
+                            <td class="column-4">Tickets</td>
+                            <td class="column-5">Status</td>
+                            <td class="column-6"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row-2">
+                            <td class="column-1">Tomorrowland 2018</td>
+                            <td class="column-2">12-12-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn push">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-3">
+                            <td class="column-1">ADE 2019</td>
+                            <td class="column-2">30-12-2019 14:00</td>
+                            <td class="column-3">31-12-2019 01:00</td>
+                            <td class="column-4">1500 / 1500</td>
+                            <td class="column-5">
+                                <p class="greyBtn">Uitverkocht</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-4">
+                            <td class="column-1">Mini party 15.2</td>
+                            <td class="column-2">10-10-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-5">
+                            <td class="column-1">Tomorrowland 2018</td>
+                            <td class="column-2">12-12-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-6">
+                            <td class="column-1">ADE 2019</td>
+                            <td class="column-2">30-12-2019 14:00</td>
+                            <td class="column-3">30-12-2019 14:00</td>
+                            <td class="column-4">1500 / 1500</td>
+                            <td class="column-5">
+                                <p class="greyBtn">Uitverkocht</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-7">
+                            <td class="column-1">Mini party 15.2</td>
+                            <td class="column-2">10-10-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-8">
+                            <td class="column-1">Mini party 15.2</td>
+                            <td class="column-2">10-10-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-9">
+                            <td class="column-1">Tomorrowland 2018</td>
+                            <td class="column-2">12-12-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-10">
+                            <td class="column-1">ADE 2019</td>
+                            <td class="column-2">30-12-2019 14:00</td>
+                            <td class="column-3">30-12-2019 14:00</td>
+                            <td class="column-4">1500 / 1500</td>
+                            <td class="column-5">
+                                <p class="greyBtn">Uitverkocht</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-11">
+                            <td class="column-1">Mini party 15.2</td>
+                            <td class="column-2">10-10-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr class="row-1">
+                            <td class="column-1"><a>Evenement<div><img alt="" src="img/arrow-white.png" class="top"><img alt="" src="img/arrow-bottom.png" class="bottom"></div></a>
+                            </td>
+                            <td class="column-2"><a>Start datum<div><img alt="" src="img/arrow-white.png" class="top"><img alt="" src="img/arrow-bottom.png" class="bottom"></div></a></td>
+                            <td class="column-3"><a>Eind datum<div><img alt="" src="img/arrow-white.png" class="top"><img alt="" src="img/arrow-bottom.png" class="bottom"></div></a></td>
+                            <td class="column-4">Tickets</td>
+                            <td class="column-5">Status</td>
+                            <td class="column-6"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row-2">
+                            <td class="column-1">Tomorrowland 2018</td>
+                            <td class="column-2">12-12-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn push">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-3">
+                            <td class="column-1">ADE 2019</td>
+                            <td class="column-2">30-12-2019 14:00</td>
+                            <td class="column-3">31-12-2019 01:00</td>
+                            <td class="column-4">1500 / 1500</td>
+                            <td class="column-5">
+                                <p class="greyBtn">Uitverkocht</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-4">
+                            <td class="column-1">Mini party 15.2</td>
+                            <td class="column-2">10-10-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-5">
+                            <td class="column-1">Tomorrowland 2018</td>
+                            <td class="column-2">12-12-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-6">
+                            <td class="column-1">ADE 2019</td>
+                            <td class="column-2">30-12-2019 14:00</td>
+                            <td class="column-3">30-12-2019 14:00</td>
+                            <td class="column-4">1500 / 1500</td>
+                            <td class="column-5">
+                                <p class="greyBtn">Uitverkocht</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-7">
+                            <td class="column-1">Mini party 15.2</td>
+                            <td class="column-2">10-10-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-8">
+                            <td class="column-1">Mini party 15.2</td>
+                            <td class="column-2">10-10-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-9">
+                            <td class="column-1">Tomorrowland 2018</td>
+                            <td class="column-2">12-12-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-10">
+                            <td class="column-1">ADE 2019</td>
+                            <td class="column-2">30-12-2019 14:00</td>
+                            <td class="column-3">30-12-2019 14:00</td>
+                            <td class="column-4">1500 / 1500</td>
+                            <td class="column-5">
+                                <p class="greyBtn">Uitverkocht</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                        <tr class="row-11">
+                            <td class="column-1">Mini party 15.2</td>
+                            <td class="column-2">10-10-2018 14:00</td>
+                            <td class="column-3">15-12-2018 01:00</td>
+                            <td class="column-4">1426 / 3000</td>
+                            <td class="column-5">
+                                <p class="greenBtn">Open</p>
+                            </td>
+                            <td class="column-6">
+                                <p class="transpBtn">Wijzigen</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <nav class="slider-nav">
+                <ul>
+                    <li class="arrow arrowPrew">
+                        <a class="previous previousDefoult"></a>
+                    </li>
+                    <p class="num"></p>
+                    <li class="arrow arrowNext">
+                        <a class="next"></a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body></html>

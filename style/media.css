@@ -1,0 +1,305 @@
+@media all and (max-width:1024px) {
+    .searchBox {
+        width: 56%;
+    }
+
+    .searchBtn {
+        margin: 0 0 0 -4vw;
+    }
+
+    .box input[type=search] {
+        width: 21.1vw;
+        height: 3.13vw;
+    }
+
+    .box .btnBox {
+        height: 2.6vw;
+    }
+
+    .greyBtn,
+    .greenBtn {
+        width: 7.6vw;
+        height: 1.3vw;
+        border-radius: 10px;
+        padding: 0.1vw 0.8vw 0.1vw;
+    }
+
+    .column-5,
+    .column-6 {
+        width: 168px;
+    }
+
+    .transpBtn {
+        width: 5.7vw;
+        height: 2vw;
+        padding: 0.3vw 0.8vw 0.2vw;
+    }
+
+    .slider table tbody .column-1 {
+        border-left: 3px solid transparent;
+    }
+
+    .slider table tbody tr:hover .column-1 {
+        border-left: 3px solid #F0B52D;
+    }
+
+    .menu li .title {
+        line-height: 2.25vw;
+    }
+}
+
+@media all and (max-width:768px) {
+    .dashboard {
+        width: 27%;
+        padding: 4.83vw 0;
+    }
+
+    .menu li a.logo {
+        font-size: 2.3vw;
+        line-height: 2.3vw;
+        letter-spacing: 1.5px;
+    }
+
+    .content {
+        width: 73%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 3.05vw 2vw 3.05vw 2vw;
+        background: #F5F5F5;
+    }
+
+    .menu li .title,
+    .subMenu li a {
+        font-size: 2.6vw;
+    }
+
+    .title p {
+        width: 3.41vw;
+        margin: 0 1.53vw 0 0;
+    }
+
+    .menu li,
+    .menu .hasSub div {
+        padding: 3vw 1.3vw;
+    }
+
+    .menu li .title {
+        line-height: 4.25vw;
+    }
+
+    .fa-caret-down:before {
+        font-size: 2.4vw;
+    }
+
+    .subMenu li:first-of-type,
+    .subMenu li {
+        padding: 0.68vw 0vw 0.68vw 6.4vw;
+    }
+
+    .boxWelcome {
+        padding: 1.58vw 2.66vw 1.58vw 2.3vw;
+    }
+
+    .boxWelcome .tittle {
+        font-size: 2.7vw;
+        letter-spacing: 0.76px;
+    }
+
+    .boxWelcome .name {
+        font-size: 2.3vw;
+    }
+
+    .boxWelcome .notification img {
+        width: 2.84vw;
+    }
+
+    .boxWelcome .notification .text {
+        width: 2.5vw;
+        height: 2.4vw;
+        font-size: 2.1vw;
+        line-height: 1.7vw;
+        padding: 0.3vw 0 0 0.3vw;
+    }
+
+    .boxWelcome .userBox .user {
+        width: 4.5vw;
+        margin-right: 1.05vw;
+    }
+
+    .boxWelcome .userBox .arrow {
+        width: 1.2vw;
+    }
+
+    .popup .popuptext li {
+        height: 6vw;
+    }
+
+    .popup .popuptext {
+        font-size: 2vw;
+    }
+
+    .searchBox .popuptext {
+        width: 38.1vw;
+        right: 0;
+        left: 1.6vw;
+        margin: 0;
+        top: 85%;
+    }
+
+    .notification .popuptext {
+        width: 22.44vw;
+    }
+
+    .popup .popuptext::before {
+        top: -0.5vw;
+        left: 81.9%;
+    }
+
+    .userBox .popuptext {
+        width: 22.8vw;
+        right: -38%;
+    }
+
+    .btn {
+        width: 17.8vw;
+        font-size: 2.2vw;
+        letter-spacing: 1.1px;
+        border: 1px solid #193E58;
+    }
+
+    .box .btnBox {
+        height: 7.13vw;
+        margin-left: 0;
+    }
+
+    .newBtn {
+        width: 16vw;
+        height: 7.13vw;
+        font-size: 2.4vw;
+        letter-spacing: 2px;
+        display: none;
+        border-radius: 6px;
+        padding: 0 1.5vw 0 2.05vw;
+    }
+
+    .newBtn span {
+        font-size: 3.46vw;
+        padding: 0 0 0.2vw;
+    }
+
+    .box input[type=search] {
+        width: 30.1vw;
+        height: 7.13vw;
+        font-size: 2vw;
+    }
+
+    .slider table .row-1 {
+        height: 6.35vw;
+    }
+
+    .slider table .row-1 td {
+        font-size: 2.7vw;
+        letter-spacing: 1px;
+    }
+
+    .slider table tbody tr {
+        height: 9.2vw;
+    }
+
+    .slider table tbody td {
+        font-size: 2.7vw;
+    }
+
+    .slider {
+        overflow-x: scroll;
+        margin: 8.76vw 0 7.45vw;
+    }
+
+    .slider table {
+        width: 230%;
+        overflow-x: scroll;
+    }
+
+    .greyBtn,
+    .greenBtn {
+        width: 16.6vw;
+        height: 2.7vw;
+        border-radius: 10px;
+        padding: 0.2vw 0.8vw 0.1vw;
+        font-size: 1.63vw;
+    }
+
+    .transpBtn {
+        width: 12.7vw;
+        height: 4vw;
+        padding: 0.3vw 0.8vw 0.2vw;
+        font-size: 1.63vw;
+    }
+
+    .slider-nav .num {
+        font-size: 2.94vw;
+        width: 29vw;
+    }
+
+    .slider-nav a {
+        width: 6.1vw;
+        height: 6.1vw;
+    }
+
+    .arrow {
+        width: 6.1vw;
+        height: 6.1vw;
+    }
+
+
+
+    .searchBox {
+        width: auto;
+        padding-left: 0.5vw;
+        display: none;
+    }
+
+    .searchBox .searchBtn {
+        width: 11.65vw;
+        height: 7.6vw;
+        margin: 0 0 0 -6vw;
+        border-radius: 6vw;
+    }
+
+    .searchBox input[type=search] {
+        width: 43vw;
+        height: 7.6vw;
+        border-radius: 8.3vw;
+        padding: 0 2vw;
+        font-size: 3vw;
+        margin: 3vw 0;
+    }
+
+    .searchBox input[type=search]::placeholder {
+        font-size: 3vw;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .logo img {
+        margin: 0 1.2vw 0 0;
+        width: 4.14vw;
+    }
+
+    .slider .row-1 img {
+        width: 1.2vw;
+    }
+
+    .slider .row-1 .bottom {
+        margin: 0.5vw 0 0;
+    }
+
+    .slider .row-1 div {
+        margin-left: 1.73vw;
+    }
+
+}
