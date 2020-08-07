@@ -28,7 +28,7 @@ $('form').submit(function () {
 
 
 //    slider
-const items = document.querySelectorAll('table');
+const items = document.querySelectorAll('.slide');
 const itemCount = items.length;
 const nextItem = document.querySelector('.arrowNext');
 const previousItem = document.querySelector('.arrowPrew');
@@ -91,11 +91,11 @@ document.addEventListener('keydown', keyPress);
 
 $('.hasSub').click(function () {
     $(' .fas').toggleClass("rotate");
+    $(".subMenu").slideToggle(400);
     $(this).toggleClass("clickLi");
     $('.subMenu').toggleClass("open");
     $('.iconWhite').toggleClass("iconShow");
 });
-
 
 // When the user clicks on div, open the popup
 function notificationFunction() {
@@ -117,3 +117,8 @@ function searchMobFunction() {
     var popup = document.getElementById("myPopup4");
     popup.classList.toggle("show");
 }
+
+var height = document.querySelector('.content').offsetHeight;
+$('.dashboard').css({
+    height: height
+});
