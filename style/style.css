@@ -541,7 +541,7 @@ body {
 
 .greenBtn {
     width: 7vw;
-    height: 1vw;
+    height: 1.1vw;
     background: #26973D;
     border-radius: 4px;
     text-align: center;
@@ -558,7 +558,7 @@ body {
 
 .greyBtn {
     width: 7vw;
-    height: 1vw;
+    height: 1.1vw;
     background: #4D4D4D;
     border-radius: 4px;
     text-align: center;
