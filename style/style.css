@@ -21,11 +21,12 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     background: #193E58;
-    background: linear-gradient(90deg, #193E58 16.36%, #F5F5F5 16.36%);
+    background: linear-gradient(90deg, #193E58 16.38%, #F5F5F5 16.38%);
 }
 
 .dashboard {
     width: 16.36%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

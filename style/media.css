@@ -28,8 +28,9 @@
 
 @media all and (max-width:768px) {
     .contentBox {
-    background: linear-gradient(90deg, #193E58 27%, #F5F5F5 27%);
-}
+        background: linear-gradient(90deg, #193E58 27%, #F5F5F5 27%);
+    }
+
     .dashboard {
         width: 27%;
         padding: 4.83vw 0;
@@ -78,7 +79,7 @@
 
     .subMenu li:first-of-type,
     .subMenu li {
-        padding: 0.68vw 0vw 0.68vw 6.4vw;
+        padding: 3vw 0vw 3vw 6.4vw;
     }
 
     .boxWelcome {
