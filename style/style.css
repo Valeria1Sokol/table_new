@@ -221,7 +221,7 @@ body {
 .searchBox {
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 54%;
     padding-left: 3.5vw;
 }
 
@@ -531,7 +531,7 @@ body {
 }
 
 .slider .column5 {
-    width: 5.6vw;
+    width: 7vw;
     text-align: center;
 }
 
@@ -540,7 +540,7 @@ body {
 }
 
 .greenBtn {
-    width: 5.6vw;
+    width: 7vw;
     height: 1vw;
     background: #26973D;
     border-radius: 4px;
@@ -557,7 +557,7 @@ body {
 }
 
 .greyBtn {
-    width: 5.6vw;
+    width: 7vw;
     height: 1vw;
     background: #4D4D4D;
     border-radius: 4px;
