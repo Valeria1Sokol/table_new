@@ -118,7 +118,7 @@ function searchMobFunction() {
     popup.classList.toggle("show");
 }
 
-var height = document.querySelector('.content').offsetHeight;
-$('.dashboard').css({
-    height: height
-});
+//var height = document.querySelector('.content').offsetHeight;
+//$('.dashboard').css({
+//    height: height
+//});
