@@ -21,7 +21,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     background: #193E58;
-    background: linear-gradient(90deg, #193E58 16.36%, #F5F5F5 83.64%);
+    background: linear-gradient(90deg, #193E58 16.36%, #F5F5F5 16.36%);
 }
 
 .dashboard {

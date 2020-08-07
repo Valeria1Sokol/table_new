@@ -28,7 +28,7 @@
 
 @media all and (max-width:768px) {
     .contentBox {
-    background: linear-gradient(90deg, #193E58 27%, #F5F5F5 73%);
+    background: linear-gradient(90deg, #193E58 27%, #F5F5F5 27%);
 }
     .dashboard {
         width: 27%;
